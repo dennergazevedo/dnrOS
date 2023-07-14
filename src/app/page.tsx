@@ -25,7 +25,7 @@ export default function Home() {
     setTimeout(() => {
       router.push('/init')
     }, END_LOADING)
-    
+
   }, [router])
 
   useEffect(() => {
@@ -45,7 +45,7 @@ export default function Home() {
   }, [control])
 
   return (
-    <main className="flex min-h-screen flex-col p-24">
+    <main className="flex min-h-screen flex-col p-4 md:p-24">
       {
         control.boot &&
         <p className="w-fit text-xs os-typewriter mb-2">
@@ -66,7 +66,7 @@ export default function Home() {
       }
       {
         control.name &&
-        <h1 className="w-fit text-6xl os-typewriter mb-12 logo">
+        <h1 className="w-fit os-typewriter mb-12 logo text-4xl md:text-6xl">
           dnr.OS
         </h1>
       }

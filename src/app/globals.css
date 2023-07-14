@@ -34,8 +34,9 @@ body {
   white-space: nowrap; /* Keeps the content on a single line */
   letter-spacing: .15em; /* Adjust as needed */
   text-shadow: 2px 2px 8px #075D8C;
+  
   animation: 
-    typing 8s steps(100, end),
+    typing 4s steps(20, end),
     blink-caret .75s step-end infinite;
 }
 
@@ -62,4 +63,12 @@ body {
 @keyframes blink {
   from, to { opacity: 0 }
   50% { opacity: 1 }
+}
+
+@media (min-width: 992px){
+  .os-typewriter {
+    animation: 
+      typing 8s steps(100, end),
+      blink-caret .75s step-end infinite;
+  }
 }
