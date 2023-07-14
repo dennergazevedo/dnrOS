@@ -33,7 +33,6 @@ export default function Home() {
     if(!boot || (boot && author && loading && name && notice)) return
 
     setTimeout(() => {
-      console.log("CONTROL", control);
       setControl(prev => ({
         boot: true,
         author: prev.boot ? true : false,
@@ -45,7 +44,7 @@ export default function Home() {
   }, [control])
 
   return (
-    <main className="flex min-h-screen flex-col p-4 md:p-24">
+    <main className="flex min-h-screen flex-col p-4 bg-black md:p-24">
       {
         control.boot &&
         <p className="w-fit text-xs os-typewriter mb-2">

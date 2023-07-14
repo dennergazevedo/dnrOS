@@ -40,7 +40,7 @@ const TopBar: React.FC = () => {
   return (
     <section className="flex flex-row z-10 justify-between text-sm pt-1 pb-1 pr-4 pl-4 bg-zinc-900">
       <div />
-      <div className="flex flex-row items-center cursor-default">
+      <div className="flex flex-row items-center cursor-default text-white">
         <span className="mr-2">{ date }</span>
         <span>{ hours }</span>
       </div>
