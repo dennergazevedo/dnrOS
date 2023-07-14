@@ -4,7 +4,7 @@ import Bg from '@/assets/bg.png'
 
 const Background: React.FC = () => {
   return (
-    <Image src={Bg} alt='background' className='flex absolute bottom-0 object-cover left-0 w-screen h-screen' />
+    <Image src={Bg} alt='background' className='flex z-0 absolute bottom-0 object-cover left-0 w-screen h-screen' />
   );
 }
 
