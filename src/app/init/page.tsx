@@ -13,7 +13,7 @@ const ubuntu = Ubuntu({
 
 const DnrOS: React.FC = () => {
   return (
-    <section className={`${ubuntu.className} flex flex-col w-screen h-screen`}>
+    <section className={`${ubuntu.className} flex flex-col w-screen h-screen max-h-screen overflow-hidden`}>
       <Background />
       <TopBar />
       <Dock />
