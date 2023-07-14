@@ -48,6 +48,16 @@ body {
   animation: blink .75s step-end infinite;
 }
 
+.dock-hide{
+  transition: 1s all;
+  transform: translateY(100px);
+}
+
+.dock-show{
+  transition: 0.5s all;
+  transform: translateY(0);
+}
+
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }

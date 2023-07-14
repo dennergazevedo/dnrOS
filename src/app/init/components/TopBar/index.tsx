@@ -14,7 +14,9 @@ const TopBar: React.FC = () => {
   const [date, setDate] = useState<string>('')
 
   const getHours = useCallback(() => {
-    setHours(`${new Date().getHours()}:${new Date().getMinutes()}`);
+    const hour = ("0000" + new Date().getHours()).slice(-2)
+    const minutes = ("0000" + new Date().getMinutes()).slice(-2)
+    setHours(`${hour}:${minutes}`);
     setTimeout(() => {
       getHours();
     }, SECOND)
@@ -23,7 +25,7 @@ const TopBar: React.FC = () => {
   const getDate = useCallback(() => {
     const today = new Date();
     const month = parseMonth[today.getMonth()]
-    setDate(`${month} ${new Date().getDate()}`)
+    setDate(`${month} ${("00" + new Date().getDate()).slice(-2)}`)
 
     setTimeout(() => {
       getDate()

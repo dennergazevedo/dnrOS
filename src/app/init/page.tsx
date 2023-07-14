@@ -3,6 +3,7 @@ import { Ubuntu } from 'next/font/google'
 
 import Background from './components/Background';
 import TopBar from './components/TopBar';
+import Dock from './components/Dock';
 
 const ubuntu = Ubuntu({
   weight: "400",
@@ -15,6 +16,7 @@ const DnrOS: React.FC = () => {
     <section className={`${ubuntu.className} flex flex-col w-screen h-screen`}>
       <Background />
       <TopBar />
+      <Dock />
     </section>
   );
 }
