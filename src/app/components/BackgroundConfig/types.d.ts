@@ -1,0 +1,3 @@
+interface IBackgroundConfig{
+  toggle: () => void
+}

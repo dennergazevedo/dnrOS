@@ -1,7 +1,7 @@
 'use client'
 import React, { Fragment, useState } from 'react';
 import { FaPowerOff } from 'react-icons/fa6';
-import Window from '../Window';
+import Window from '../Power';
 import Loading from '../Loading';
 
 const Shutdown: React.FC = () => {

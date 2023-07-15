@@ -8,7 +8,6 @@ const Loading: React.FC<ILoading> = ({ type }: ILoading) => {
   const router = useRouter()
 
   useEffect(() => {
-    console.log("type", type);
     if(type === 'reload'){
       setTimeout(() => { router.push('/') }, END_LOADING)
     }else if (type === 'shutdown'){
@@ -17,7 +16,7 @@ const Loading: React.FC<ILoading> = ({ type }: ILoading) => {
   }, [router, type])
 
   return (
-    <div className='z-20 flex flex-col justify-center items-center h-screen w-screen absolute left-0 top-0 bg-black/60'>
+    <div className='z-30 flex flex-col justify-center items-center h-screen w-screen absolute left-0 top-0 bg-black/60'>
       <ImSpinner2 size={48} color={'#FFF'} className='z-30 animate-spin'/>
     </div>
   );
