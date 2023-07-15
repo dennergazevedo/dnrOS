@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={presStart.className}>{children}</body>
+      <body className={`${presStart.className} w-screen h-screen overflow-hidden`}>{children}</body>
     </html>
   )
 }

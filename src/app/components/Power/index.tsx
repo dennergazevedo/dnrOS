@@ -8,7 +8,7 @@ const Window: React.FC<IWindow> = ({ toggle, handleConfig }: IWindow) => {
   return (
     <Fragment>
       <div className='z-10 flex flex-col justify-center items-center h-screen w-screen absolute left-0 top-0 bg-black/60'/>
-      <div className='flex flex-col z-20 absolute top-1/2 left-1/2 rounded overflow-hidden -translate-x-1/2 -translate-y-1/2 bg-zinc-300 w-96'>
+      <div className='flex flex-col z-20 absolute top-1/2 left-1/2 rounded overflow-hidden -translate-x-1/2 -translate-y-1/2 bg-zinc-300 w-72 md:w-96'>
         <div className='flex flex-row justify-between p-2 pr-4 pl-4 bg-zinc-900'>
           <span className='text-sm cursor-default'>
             Turn off the dnrOS?
