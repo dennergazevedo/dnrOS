@@ -36,7 +36,7 @@ body {
   text-shadow: 2px 2px 8px #075D8C;
   
   animation: 
-    typing 4s steps(20, end),
+    typing 1.5s steps(50, end),
     blink-caret .75s step-end infinite;
 }
 

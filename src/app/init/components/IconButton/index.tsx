@@ -7,7 +7,7 @@ const IconButton: React.FC<IconButton> = ({ Icon, link, name }: IconButton) => {
       href={link} 
       target='_blank' 
       aria-label={name}
-      className={`flex linear-bg-white shadow-white rounded-md hover:-translate-y-1 transition-all p-2 cursor-pointer hover:bg-slate-300/10`}
+      className={`flex linear-bg-white shadow-white rounded-md transition-all p-2 cursor-pointer hover:bg-slate-300/10`}
     >
       <Icon size={24} color={"#FFF"}/>
     </Link>

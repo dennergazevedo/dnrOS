@@ -71,8 +71,8 @@ export default function Home() {
       }
       {
         control.loading &&
-        <p className="w-fit text-xs os-typewriter font-blink">
-          PLEASE WAIT_
+        <p className="w-fit text-xs os-typewriter">
+          PLEASE WAIT<span className="font-blink">_</span>
         </p>
       }
     </main>

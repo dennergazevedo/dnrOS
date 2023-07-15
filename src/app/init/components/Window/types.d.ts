@@ -1,0 +1,3 @@
+interface IWindow{
+  toggle: () => void
+}
