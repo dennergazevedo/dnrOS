@@ -1,10 +1,9 @@
 import React from 'react';
 import { Ubuntu } from 'next/font/google'
 
-import Background from './components/Background';
-import TopBar from './components/TopBar';
-import Dock from './components/Dock';
-import Window from './components/Window';
+import Background from '../components/Background';
+import TopBar from '../components/TopBar';
+import Dock from '../components/Dock';
 
 const ubuntu = Ubuntu({
   weight: "400",
