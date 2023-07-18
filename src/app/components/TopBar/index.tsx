@@ -38,7 +38,7 @@ const TopBar: React.FC = () => {
   }, [getDate, getHours])
 
   return (
-    <section className="flex flex-row z-10 justify-between text-sm pt-1 pb-1 pr-4 pl-4 bg-zinc-900">
+    <section className="flex flex-row z-20 justify-between text-sm pt-1 pb-1 pr-4 pl-4 bg-zinc-900">
       <div />
       <div className="flex flex-row items-center cursor-default text-white">
         <span className="mr-2">{ date }</span>
