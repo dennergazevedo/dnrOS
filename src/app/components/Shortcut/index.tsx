@@ -12,7 +12,7 @@ const Shortcut: React.FC<IShortcut> = ({ Icon, label, short }: IShortcut) => {
   }
 
   return (
-    <button onClick={handleClick} className='flex p-2 pr-4 pl-4 w-20 rounded focus:bg-slate-300/10'>
+    <button onClick={handleClick} className='flex justify-center items-center pt-2 pb-2 pr-4 pl-4 w-20 rounded focus:bg-slate-300/10'>
       <div className='flex flex-col justify-center items-center relative w-16 h-auto'>
         <Icon size={48} color="#FFF"/>
         {
