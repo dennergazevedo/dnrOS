@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Press_Start_2P } from 'next/font/google'
+import Head from './head'
 
 const presStart = Press_Start_2P({
   weight: "400",
@@ -20,6 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
+      <Head />
       <body className={`${presStart.className} w-screen h-screen overflow-hidden`}>{children}</body>
     </html>
   )
