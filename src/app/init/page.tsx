@@ -21,7 +21,7 @@ const DnrOS: React.FC = () => {
       <Background />
       <TopBar />
       <Dock />
-      <div className='flex flex-col z-30 p-4 w-auto'>
+      <div className='flex flex-col p-4 w-auto'>
         <Shortcut Icon={AiOutlineGlobal} label="Portfolio" short={true}/>
       </div>
     </section>
