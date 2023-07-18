@@ -1,9 +1,13 @@
+'use client'
 import React from 'react';
 import { Ubuntu } from 'next/font/google'
+
+import { AiOutlineGlobal } from 'react-icons/ai';
 
 import Background from '../components/Background';
 import TopBar from '../components/TopBar';
 import Dock from '../components/Dock';
+import Shortcut from '../components/Shortcut';
 
 const ubuntu = Ubuntu({
   weight: "400",
@@ -17,6 +21,9 @@ const DnrOS: React.FC = () => {
       <Background />
       <TopBar />
       <Dock />
+      <div className='flex flex-col z-30 p-4 w-auto'>
+        <Shortcut Icon={AiOutlineGlobal} label="Portfolio" short={true}/>
+      </div>
     </section>
   );
 }
