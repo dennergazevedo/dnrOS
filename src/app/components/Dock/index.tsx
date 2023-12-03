@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { RiInstagramLine, RiLinkedinFill, RiGithubLine } from 'react-icons/ri'
+import { FaAnglesUp } from "react-icons/fa6";
 
 import IconButton from '../IconButton';
 
@@ -30,6 +31,9 @@ const Dock: React.FC = () => {
       onMouseEnter={toggle}
       onMouseLeave={toggle}
     >
+      <div className={`${!show && !isMobile ? 'dock-alert-show' : 'dock-alert-hide'}`}>
+        <FaAnglesUp size={16}/>
+      </div>
       <div className={`flex flex-row justify-center items-center pr-8 pl-8 border border-slate-300/20 bg-slate-800/50 h-full max-w-4xl rounded-2xl ${show || isMobile ? 'dock-show' : 'dock-hide'}`}>
         <ul className='flex flex-row'>
           <li className='mr-8'>

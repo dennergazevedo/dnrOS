@@ -5,6 +5,7 @@ import { AiOutlineCheckCircle } from 'react-icons/ai';
 import Image from 'next/image';
 
 import { backgroundImageList } from './constants';
+import Backdrop from '../Backdrop';
 
 const BackgroundConfig: React.FC<IBackgroundConfig> = ({ toggle }: IBackgroundConfig) => {
   const [selectedBg, setSelectedBg] = useState<number>(0);
@@ -22,7 +23,7 @@ const BackgroundConfig: React.FC<IBackgroundConfig> = ({ toggle }: IBackgroundCo
 
   return (
     <Fragment>
-      <div className='z-10 flex flex-col justify-center items-center h-screen w-screen absolute left-0 top-0 bg-black/60'/>
+      <Backdrop />
       <div className='flex flex-col z-20 absolute top-1/2 left-1/2 rounded overflow-hidden -translate-x-1/2 -translate-y-1/2 bg-slate-800 w-9/12'>
         <div className='flex flex-row justify-between p-2 pr-4 pl-4 bg-zinc-900'>
           <span className='text-sm cursor-default'>

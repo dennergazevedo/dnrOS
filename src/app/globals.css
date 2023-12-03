@@ -58,6 +58,27 @@ body {
   transform: translateY(0);
 }
 
+.dock-alert-hide{
+  position: absolute;
+  bottom: 16px;
+  left: calc(50% - 8px);
+  transition: 1s all;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.dock-alert-show{
+  position: absolute;
+  bottom: 40px;
+  left: calc(50% - 8px);
+  transition: 0.5s all;
+  transform: translateY(0);
+  width: 100%;
+  opacity: 0.3;
+  animation: blink-alert 2s ease-in-out infinite;
+}
+
 *::-webkit-scrollbar{
   display: none;
 }
@@ -77,6 +98,11 @@ body {
 @keyframes blink {
   from, to { opacity: 0 }
   50% { opacity: 1 }
+}
+
+@keyframes blink-alert {
+  from, to { transform: translateY(0) }
+  50% { transform: translateY(16px) }
 }
 
 @media (min-width: 992px){
