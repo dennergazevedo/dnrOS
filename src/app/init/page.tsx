@@ -10,6 +10,7 @@ import TopBar from '../components/TopBar';
 import Dock from '../components/Dock';
 import Shortcut from '../components/Shortcut';
 import Folder from '../components/Folder';
+import Download from '../components/Download';
 
 const ubuntu = Ubuntu({
   weight: "400",
@@ -26,6 +27,7 @@ const DnrOS: React.FC = () => {
       <div className='flex flex-col p-4 w-auto z-10'>
         <Shortcut Icon={AiOutlineGlobal} label="Portfolio"/>
         <Folder Icon={IoMdFolderOpen} label="Explorar"/>
+        <Download label="Currículo.pdf" path='/Currículo.pdf'/>
       </div>
     </section>
   );
