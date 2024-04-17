@@ -45,7 +45,7 @@ const Folder: React.FC<IFolder> = ({ Icon, label }: IFolder) => {
             <span className='flex ml-4'>Images</span>
           </div>
         </div>
-        <div className='flex flex-row flex-wrap pd4 gap-4 p-8'>
+        <div className='flex flex-row flex-wrap pd4 gap-4 p-8 overflow-auto'>
           {backgroundImageList.map((image, index) => (
             <div 
             key={`bg-item--${index}`} 
