@@ -12,12 +12,12 @@ const BackgroundConfig: React.FC<IBackgroundConfig> = ({ toggle }: IBackgroundCo
 
   const handleSelectBg = (index: number) => {
     setSelectedBg(index);
-    localStorage.setItem('@dnr:osbg', `${index}`);
-    window.postMessage({eventName: '@dnr:bgchange', value: index}, '*')
+    localStorage.setItem('@dnnr:osbg', `${index}`);
+    window.postMessage({eventName: '@dnnr:bgchange', value: index}, '*')
   }
 
   useEffect(() => {
-    const savedBg = localStorage.getItem('@dnr:osbg');
+    const savedBg = localStorage.getItem('@dnnr:osbg');
     if(savedBg) setSelectedBg(Number(savedBg))
   }, [])
 

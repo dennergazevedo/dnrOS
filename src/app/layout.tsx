@@ -10,7 +10,7 @@ const presStart = Press_Start_2P({
 })
 
 export const metadata: Metadata = {
-  title: 'dnrOS',
+  title: 'OS.dnnr',
   description: 'Simulated Operating System',
 }
 

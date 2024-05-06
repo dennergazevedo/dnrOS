@@ -10,13 +10,13 @@ const Background: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
 
   const handleSelect = useCallback((event: any) => {
-    if(event.data.eventName === '@dnr:bgchange'){
+    if(event.data.eventName === '@dnnr:bgchange'){
       setSelected(Number(event.data.value))
     }
   }, [])
 
   useEffect(() => {
-    const savedBg = localStorage.getItem('@dnr:osbg');
+    const savedBg = localStorage.getItem('@dnnr:osbg');
     if(savedBg) setSelected(Number(savedBg))
     window.addEventListener('message', handleSelect)
     setLoading(false);

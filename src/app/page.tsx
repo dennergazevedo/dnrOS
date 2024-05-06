@@ -48,7 +48,7 @@ export default function Home() {
       {
         control.boot &&
         <p className="w-fit text-xs os-typewriter mb-2">
-          BOOTING DNR.OS - v1.0.0
+          BOOTING OS.DNNR - v1.0.13
         </p>
       }
       {
@@ -66,7 +66,7 @@ export default function Home() {
       {
         control.name &&
         <h1 className="w-fit os-typewriter mb-12 logo text-4xl md:text-6xl">
-          dnr.OS
+          OS.dnnr
         </h1>
       }
       {

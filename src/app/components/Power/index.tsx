@@ -11,7 +11,7 @@ const Window: React.FC<IWindow> = ({ toggle, handleConfig }: IWindow) => {
       <div className='flex flex-col z-40 absolute top-1/2 left-1/2 rounded overflow-hidden -translate-x-1/2 -translate-y-1/2 bg-zinc-300 w-72 md:w-96'>
         <div className='flex flex-row justify-between p-2 pr-4 pl-4 bg-zinc-900'>
           <span className='text-sm cursor-default'>
-            Turn off the dnrOS?
+            Turn off the OS.dnnr?
           </span>
           <button className='bg-red-500 rounded-full w-5 h-5 flex justify-center items-center cursor-pointer' onClick={toggle}>
             <IoClose size={16} color="#333"/>

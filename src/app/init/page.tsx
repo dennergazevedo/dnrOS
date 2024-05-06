@@ -18,7 +18,7 @@ const ubuntu = Ubuntu({
   preload: true
 })
 
-const DnrOS: React.FC = () => {
+const DnnrOS: React.FC = () => {
   return (
     <section className={`${ubuntu.className} flex flex-col w-screen h-screen max-h-screen overflow-hidden`}>
       <Background />
@@ -33,4 +33,4 @@ const DnrOS: React.FC = () => {
   );
 }
 
-export default DnrOS;
+export default DnnrOS;

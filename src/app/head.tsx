@@ -4,7 +4,7 @@ import Script from 'next/script'
 const Head: React.FC = () => {
   return (
     <head>
-      <title>dnr.OS</title>
+      <title>OS.dnnr</title>
       <meta name="description" content="Denner Azevedo - Web Developer" />
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-BD497N434V"/>
       <Script id="google-analytics">
